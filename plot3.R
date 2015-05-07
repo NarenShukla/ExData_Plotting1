@@ -60,7 +60,7 @@ download.file(url="http://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehol
 
 with(ec3, {
           plot(DateTime, Sub_metering_1, type = "n", 
-                   xlab="DateTime", ylab="Energy sub metering")
+                   xlab="", ylab="Energy sub metering")
           lines(DateTime, Sub_metering_1, col = "black")
           lines(DateTime, Sub_metering_2, col = "red")
           lines(DateTime, Sub_metering_3, col = "blue")

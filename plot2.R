@@ -59,7 +59,7 @@ download.file(url="http://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehol
 # Plot the line Scatterplot to graphical device
 
    plot(ec3$DateTime, ec3$Global_active_power, type="l", 
-               xlab="DateTime", 
+               xlab="",
                ylab="Global Active Power (kilowatts)")
 
 # Turn the graphical device off

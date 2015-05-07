@@ -66,13 +66,13 @@ download.file(url="http://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehol
 with(ec3, 
   {
     plot(DateTime, Global_active_power, type="l", 
-               xlab="DateTime", 
+               xlab="", 
                ylab="Global Active Power")
-    plot(DateTime, Voltage, type="l", xlab="DateTime", 
+    plot(DateTime, Voltage, type="l", xlab="datetime", 
                ylab="Voltage")
      {
        plot(DateTime, Sub_metering_1, type = "n",
-              xlab="DateTime", ylab="Energy sub metering")
+              xlab="", ylab="Energy sub metering")
        lines(DateTime, Sub_metering_1, col = "black")
        lines(DateTime, Sub_metering_2, col = "red")
        lines(DateTime, Sub_metering_3, col = "blue")
@@ -84,7 +84,7 @@ with(ec3,
                                 "Sub_metering_3"))
      }
    plot(DateTime, Global_reactive_power, type="l", 
-               xlab="DateTime",  
+               xlab="datetime",  
                ylab="Global_reactive_power")
  })
 
